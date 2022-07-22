@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    height: 100vh;
+    widows: 100%;
+    background: #616e67;
+}
+
+.box{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 400px;
+    transform: translate(-50px, -50px);
+    padding: 50px;
+    background: #201a30;
+    border-radius: 15px;
+}
+
+.box h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.box .input-box{
+    position: relative;
+}
+
+.box .input-box input{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+.box .input-box label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #726e7c;
+    letter-spacing: 1px;
+    padding: 12px 0;
+    font-size: 16px;
+    transition: .4s;
+}
+
+.box input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #0df5e3;
+    color: #201a30;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+}
+
+.signUp{
+    width: 70px;
+    background: #0df5e3;
+    padding: 7px 5px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 320px;
+    position: relative;
+    bottom: 30px;
+}
+
+.signUp a{
+    text-decoration: none;
+    color: #201a30;
+}
+
+.signUp:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+
+.box input[type="submit"]:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.box .input-box input:focus ~ label,
+.box .input-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #0df5e3;
+    font-size: 12px;
+}
